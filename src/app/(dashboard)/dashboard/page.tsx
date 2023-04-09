@@ -6,7 +6,7 @@ import { FC } from 'react'
 
 const page = async ({ }) => {
   const session = await getServerSession(authOptions)
-  return <>{session}</>
+  return <>{JSON.stringify(session)}</>
 }
 
 export default page
